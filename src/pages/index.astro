@@ -12,7 +12,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Nicoas Couturier's Personal Homepage',
 };
 ---
 
@@ -24,7 +24,7 @@ const metadata = {
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
-        { text: 'Porfolio', href: '#porfolio' },
+        //{ text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
         { text: 'Github', href: 'https://github.com/onwidget' },
       ]}
@@ -43,14 +43,14 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
+    title="Nicolas Couturier"
     tagline="Personal Web Demo"
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
+      I'm an Engineer passionate about different possible uses of data. 
+      <br /> With more than 20 years of experience and a degre in Statistics.
+      Let's work together to create something new and amazing.
     </Fragment>
   </Hero>
 
