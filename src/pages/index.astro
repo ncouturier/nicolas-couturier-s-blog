@@ -5,9 +5,6 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
@@ -22,8 +19,8 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#' },
-        { text: 'About', href: '#about' },
+        { text: 'Home', href: '#'},
+        { text: 'About', href: '#about'},
         { text: 'Resume', href: '#resume' },
         { text: 'Blog', href: '#blog' },
         { text: 'Github', href: 'https://github.com/ncouturier' },
@@ -45,9 +42,7 @@ const metadata = {
     id="hero"
     title="Nicolas Couturier"
     tagline="Personal Web"
-    actions={[
-      { variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }
-    ]}
+    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') },]}
   >
     <Fragment slot="subtitle">
       I&apos;m an Engineer passionate about possible uses of data. 
@@ -61,9 +56,17 @@ const metadata = {
   <Content
     id="about"
     columns={3}
-    items={[]}
+    items={[
+ {
+        icon: 'tabler:brand-pinterest',
+        callToAction: {
+          target: '_blank',
+          text: 'Pinterest',
+          href: '#',
+        },
+      },]}
     image={{
-      src: '../assets/images/kayros__profile.png'
+      src: '../assets/images/kayros__profile.png',
       alt: 'Colorful Image',
       loading: 'eager',
     }} >
