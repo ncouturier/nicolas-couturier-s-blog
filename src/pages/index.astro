@@ -44,7 +44,7 @@ const metadata = {
   <Hero
     id="hero"
     title="Nicolas Couturier"
-    tagline="Personal Web Demo"
+    tagline="Personal Web"
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
@@ -59,32 +59,7 @@ const metadata = {
   <Content
     id="about"
     columns={3}
-    items={[
-      {
-        icon: 'tabler:brand-dribbble',
-        callToAction: {
-          target: '_blank',
-          text: 'Dribbble',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-behance',
-        callToAction: {
-          target: '_blank',
-          text: 'Behance',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
-        },
-      },
-    ]}
+    items={[]}
     image={{
       src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
       alt: 'Colorful Image',
@@ -92,18 +67,6 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
-      <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
-      </p>
-      <br />
-      <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
-      </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -111,8 +74,7 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
-
+  <!-- Steps Widget ****************** 
   <Steps
     id="resume"
     title="Work experience"
@@ -132,9 +94,9 @@ const metadata = {
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
+-->
 
-  <!-- Steps Widget ****************** -->
-
+  <!-- Steps Widget ****************** 
   <Steps
     id="resume"
     title="Education"
@@ -150,9 +112,9 @@ const metadata = {
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
+-->
 
-  <!-- Features3 Widget ************** -->
-
+  <!-- Features3 Widget **************
   <Features3
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
@@ -197,9 +159,9 @@ const metadata = {
       },
     ]}
   />
+ -->
 
-  <!-- Content Widget **************** -->
-
+  <!-- Content Widget **************** 
   <Content
     id="porfolio"
     title="Elevating visual narratives"
@@ -238,9 +200,9 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+-->
 
-  <!-- Content Widget **************** -->
-
+  <!-- Content Widget **************** 
   <Content
     isReversed
     isAfterContent={true}
@@ -276,9 +238,9 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+-->
 
-  <!-- Content Widget **************** -->
-
+  <!-- Content Widget **************** 
   <Content
     isReversed
     isAfterContent={true}
@@ -313,9 +275,9 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+-->
 
-  <!-- Testimonials Widget *********** -->
-
+  <!-- Testimonials Widget ***********
   <Testimonials
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
@@ -376,12 +338,13 @@ const metadata = {
       },
     ]}
   />
+ -->
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
     title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    subtitle="Ready to transform your vision using data ?"
     actions={[
       {
         variant: 'primary',
@@ -395,8 +358,8 @@ const metadata = {
 
   <BlogLatestPosts
     id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+    title="Explore my blog"
+    information={``}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
