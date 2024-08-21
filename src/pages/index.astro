@@ -44,7 +44,10 @@ const metadata = {
     title="Nicolas Couturier"
     tagline="Personal Web"
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') },]}
-    image = "/img/profile.png"
+    image={{
+      src: '/img/profile.png',
+      alt: 'Profile Image',
+    }}
   >
     <Fragment slot="subtitle">
       I&apos;m an Engineer passionate about possible uses of data. 
