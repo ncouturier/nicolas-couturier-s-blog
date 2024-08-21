@@ -49,6 +49,17 @@ const metadata = {
       <br /> With more than 20 years of experience and a degre in Statistics.
       Let&apos;s work together to create something new and amazing.
     </Fragment>
+
+<Image
+  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+  width={500}
+  height={500}
+  sizes="(max-width: 768px) 100vw, 432px"
+  widths={[400, 768]}
+  src="/img/profile.png"
+  alt="Colorful Image"
+/>
+
   </Hero>
 
   <!-- Content Widget **************** -->
@@ -56,12 +67,23 @@ const metadata = {
   <Content
     id="about"
     columns={3}
+    items={[
+ {
+        icon: '',
+        callToAction: {
+          target: '_blank',
+          text: '',
+          href: '#',
+        },
+      },]}
     image={{
       src: '/img/profile.png',
       alt: 'Colorful Image',
       loading: 'eager',
     }} >
     
+    <Fragment slot="content">
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
