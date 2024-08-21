@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24ae18d0-0391-495c-b590-b2611d5f45b9/deploy-status)](https://app.netlify.com/sites/nicolas-couturier-blog/deploys)
