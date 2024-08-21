@@ -44,17 +44,9 @@ const metadata = {
     title="Nicolas Couturier"
     tagline="Personal Web"
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') },]}
+    image = "/img/profile.png"
   >
     <Fragment slot="subtitle">
-        <Image
-          class="w-64 rounded-lg bg-gray-500 shadow-lg"
-          width={256}
-          height={256}
-          sizes="(max-width: 768px) 100vw, 256px"
-          widths={[256, 512]}
-          src="/img/profile.png"
-          alt="Profile Picture"
-        />
       I&apos;m an Engineer passionate about possible uses of data. 
       <br /> With more than 20 years of experience and a degree in Statistics.
       Let&apos;s work together to create something new and amazing.
@@ -63,7 +55,17 @@ const metadata = {
 
   </Hero>
 
-  <!-- CallToAction Widget *********** -->
+  <!-- CallToAction Widget *********** 
+    <Image
+          class="w-64 rounded-lg bg-gray-500 shadow-lg"
+          width={256}
+          height={256}
+          sizes="(max-width: 768px) 100vw, 256px"
+          widths={[256, 512]}
+          src="/img/profile.png"
+          alt="Profile Picture"
+        /> 
+  -->
 
   <CallToAction
     title="Let&apos;s create together"
