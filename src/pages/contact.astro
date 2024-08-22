@@ -33,7 +33,34 @@ const metadata = {
     textarea={{
       label: 'Message',
     }}
+    callToAction={{
+      text: 'Send Message',
+      href: '#',
+    }}
+    onSubmit="handleSubmit(event)"
   />
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        body: JSON.stringify(Object.fromEntries(formData)),
+      })
+        .then(response => response.json())
+        .then(data => {
+          alert('Message sent successfully!');
+          form.reset();
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again.');
+        });
+    }
+  </script>
 
   <!-- Features2 Widget ************** -->
 
